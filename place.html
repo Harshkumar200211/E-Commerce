@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Placed</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .success-container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .success-icon {
+      font-size: 60px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .order-info {
+      text-align: left;
+      margin: 20px auto;
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .order-info p {
+      margin: 6px 0;
+    }
+
+    .btn-home {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .btn-home:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-icon">✅</div>
+    <h2>Thank You! Your Order Has Been Placed</h2>
+    <p>We’ve received your order and will begin processing it shortly.</p>
+
+    <div class="order-info">
+      <p><strong>Order ID:</strong> #ODR45321</p>
+      <p><strong>Items:</strong> 3 Products</p>
+      <p><strong>Total Amount:</strong> ₹6,597</p>
+      <p><strong>Estimated Delivery:</strong> 3-5 Business Days</p>
+    </div>
+
+    <a href="index.html" class="btn-home">Continue Shopping</a>
+  </div>
+</body>
+</html>

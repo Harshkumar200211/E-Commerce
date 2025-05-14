@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - INR</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      padding: 40px 20px;
+    }
+
+    .cart-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      color: #333;
+      text-align: center;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 0;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .item-info h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .item-info p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity input {
+      width: 50px;
+      padding: 6px;
+      font-size: 15px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 17px;
+      min-width: 80px;
+      text-align: right;
+    }
+
+    .total-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .total-label {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .total-amount {
+      font-size: 22px;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .checkout-btn:hover {
+      background: #005fa3;
+    }
+
+    @media (max-width: 768px) {
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .price {
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      .total-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .checkout-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h2>Your Shopping Cart</h2>
+
+    <div class="cart-item">
+      <img src="/images/watches/1.webp" alt="Product">
+      <div class="item-info">
+        <h4>Product 1</h4>
+        <p>Short description here</p>
+      </div>
+      <div class="quantity">
+        <label for="qty1">Qty:</label>
+        <input type="number" id="qty1" value="1" min="1">
+      </div>
+      <div class="price">₹1,599</div>
+    </div>
+
+    <div class="cart-item">
+      <img src="/images/watches/2.webp" alt="Product">
+      <div class="item-info">
+        <h4>Product 2</h4>
+        <p>Short description here</p>
+      </div>
+      <div class="quantity">
+        <label for="qty2">Qty:</label>
+        <input type="number" id="qty2" value="2" min="1">
+      </div>
+      <div class="price">₹2,499</div>
+    </div>
+
+    <div class="total-section">
+      <div class="total-label">Total:</div>
+      <div class="total-amount">₹6,597</div>
+    </div>
+
+    <button class="checkout-btn"><a  class="checkout-btn" style="text-decoration: none;"  href="/checkout.html">Proceed to checkout</a></button>
+  </div>
+</body>
+</html>
